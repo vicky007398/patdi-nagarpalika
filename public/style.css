@@ -1,1 +1,25 @@
 *{box-sizing:border-box}body{margin:0;background:#f5f8fc;color:#172b42;font:16px/1.65 system-ui,'Noto Sans Gujarati',sans-serif}.top{background:#0b2847;color:#fff;text-align:center;padding:5px 12px;font-size:12px}header{background:white;border-bottom:1px solid #dde5ee;position:sticky;top:0;z-index:2}.brand{max-width:1120px;margin:auto;display:flex;align-items:center;gap:14px;padding:14px 20px}.brand h1{margin:0;color:#123a62;font-size:25px}.brand small{color:#62738a;letter-spacing:.5px}.emblem{font-size:35px}nav{max-width:1120px;margin:auto;display:flex;gap:6px;padding:0 16px 12px;overflow:auto}nav button{white-space:nowrap;background:transparent;color:#244765;border:0;padding:8px 12px;border-radius:8px}nav button.active{background:#123a62;color:white}main{max-width:1120px;margin:auto;padding:20px}.hero{background:linear-gradient(110deg,#123a62,#23679a);border-radius:20px;color:white;display:flex;justify-content:space-between;align-items:center;padding:36px;gap:15px}.hero h2{font-size:clamp(26px,4vw,44px);line-height:1.3;margin:12px 0}.hero p{color:#e2edf8}.eyebrow{font-size:13px;letter-spacing:.5px}.heroicon{font-size:100px;opacity:.75}button{cursor:pointer;font:inherit;border:0;border-radius:9px;padding:10px 16px;background:#dba74c;color:#172b42;font-weight:650}.outline{background:transparent;color:white;border:1px solid #cbdceb;margin-left:8px}.section{margin-top:28px}.section h2{color:#123a62;margin:0 0 14px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:white;border:1px solid #e0e8f1;border-radius:14px;padding:22px;box-shadow:0 3px 12px #16395c0a}.card h3{margin:8px 0;color:#123a62}.card p{margin:0;color:#64748b}.icon{font-size:30px}.muted{color:#66798d}.notice{border-left:4px solid #dba74c}.form{max-width:700px}.form label{display:block;font-weight:650;margin:12px 0 5px}.form input,.form select,.form textarea{width:100%;padding:12px;border:1px solid #c8d5e3;border-radius:9px;background:white;font:inherit}.form button{background:#123a62;color:white;margin-top:16px}.message{padding:12px;border-radius:9px;background:#eaf3fb;margin-top:12px}footer{background:#0b2847;color:white;padding:30px 20px;text-align:center;margin-top:36px}footer p,footer small{color:#cbd8e5}@media(max-width:700px){.grid{grid-template-columns:1fr 1fr}.hero{padding:25px}.heroicon{display:none}.brand h1{font-size:21px}main{padding:12px}}@media(max-width:440px){.grid{grid-template-columns:1fr}.card{padding:17px}}
+/* Patdi 360 motion design */
+:root{--ink:#09273b;--teal:#00d4ba;--gold:#f5bd64}
+html{scroll-behavior:smooth}body{background:#f1f7f8;color:var(--ink)}
+.top{background:#082b3a;letter-spacing:.07em}
+header{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);box-shadow:0 6px 30px #002b3512}
+nav button{transition:transform .3s,background .3s}nav button:hover{transform:translateY(-3px);background:#d8f7f1}
+nav button.active{background:#086b70;color:white}
+.hero{min-height:480px;position:relative;overflow:hidden;background:radial-gradient(circle at 83% 25%,#1c9b94 0%,transparent 38%),linear-gradient(115deg,#052739,#085a69 65%,#079e95);border-radius:28px;padding:clamp(25px,5vw,65px);box-shadow:0 25px 65px #06465330}
+.hero:after{content:"";position:absolute;inset:auto -12% -85% 35%;height:125%;border:1px solid #ffffff30;border-radius:50%;pointer-events:none;animation:orbit 20s linear infinite}
+.hero h2{font-size:clamp(36px,6vw,74px);max-width:700px;letter-spacing:-.035em}
+.hero p{max-width:580px;font-size:18px}.heroicon{font-size:clamp(90px,16vw,200px);filter:drop-shadow(0 20px 20px #002b3550);animation:float 5s ease-in-out infinite}
+.hero button{background:var(--teal);color:#042f38;transition:transform .25s,box-shadow .25s}
+.hero button:hover{transform:translateY(-4px);box-shadow:0 12px 30px #00d4ba45}
+.hero .outline{background:transparent;color:white}
+.section{margin-top:65px}.section h2{font-size:clamp(25px,3vw,42px);letter-spacing:-.025em}
+.card{border:1px solid #e0eeed;border-radius:22px;padding:28px;box-shadow:0 9px 25px #062b3710;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,border-color .35s;animation:reveal .65s both}
+.card:hover{transform:translateY(-9px) scale(1.015);box-shadow:0 25px 45px #083f4a20;border-color:#65d5ca}
+.card .icon{font-size:40px;transition:transform .35s}.card:hover .icon{transform:scale(1.15) rotate(-7deg)}
+.card h3{color:#0b5260}.card p{font-size:15px}
+#view{animation:reveal .45s both}
+.form button{background:#067e7c;transition:transform .25s}.form button:hover{transform:translateY(-3px)}
+@keyframes float{50%{transform:translateY(-17px)}}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes reveal{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){.hero{min-height:350px;border-radius:20px}.hero h2{font-size:37px}.section{margin-top:38px}.card{padding:20px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
