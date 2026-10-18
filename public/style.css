@@ -200,3 +200,18 @@ body:has(#home-hero:not([hidden])) .hero-foot{color:#e0ede8}
 
 /* Compact mobile weather strip: only HH:MM clock and forecast */
 .patdi-weather .weather-location{display:none!important}.patdi-weather .patdi-live-clock{padding:0 10px;font-size:13px;min-width:0}.patdi-weather .weather-status{padding:0 9px}@media(max-width:700px){.patdi-weather{height:36px}.patdi-weather .patdi-live-clock{padding:0 8px;font-size:12px}.patdi-weather .weather-status{padding:0 7px;font-size:10px}}
+
+
+/* Patdi 360 approved hybrid light content theme — October 2026 */
+:root{--cream:#f5f8f6;--ink:#173b35;--muted:#526c64}
+body,body:has(#home-hero:not([hidden])){background:#f5f8f6;color:#173b35}
+.heritage-gateway,.wide-section,.careers-page{background:#f5f8f6}
+.gateway-card,.service-tile,.demo-info-card,.form-card,.detail-card,.career-empty{background:#fff;border-color:#e1eae5;box-shadow:0 8px 24px rgba(7,61,56,.07)}
+.gateway-intro h2,.section-heading,.career-intro h2{color:#073d38}
+.gateway-intro p,.section-lead,.career-intro p{color:#526c64}
+.demo-info-card h3,.gateway-card-body h3,.service-tile strong{color:#173b35}
+.demo-info-card p,.gateway-card-body p,.service-tile small{color:#526c64}
+.news-item{background:#fff;color:#173b35;border-color:#e1eae5}
+.inner-hero,.site-header,footer{background-color:#073d38;color:#fff}
+.patdi-weather{background:#0b5149;color:#fff}
+@media(max-width:700px){.heritage-gateway{padding:52px 20px 68px}.gateway-card{border-radius:16px}.gateway-card-body{padding:16px 13px 20px}}
