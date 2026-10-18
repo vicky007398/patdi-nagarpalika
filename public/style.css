@@ -193,3 +193,7 @@ body:has(#home-hero:not([hidden])) .hero-foot{color:#e0ede8}
 @media(prefers-reduced-motion:reduce){.patdi-weather .weather-track{animation:none!important}.patdi-weather .ticker-viewport{overflow-x:auto}}
 
 .patdi-weather .weather-group{display:flex;align-items:center;flex:none;width:max-content}.patdi-weather .weather-group>span{display:inline-block;flex:none;white-space:nowrap;padding:0 26px;font-size:14px;font-weight:700}.patdi-weather .weather-track{gap:0}.patdi-weather .ticker-viewport{overscroll-behavior-x:contain}@media(max-width:700px){.patdi-weather .weather-group>span{padding:0 17px;font-size:12px}}
+
+/* Persistent Patdi live clock in the weather strip */
+.patdi-live-clock{display:flex;align-items:center;justify-content:center;flex:none;white-space:nowrap;height:100%;padding:0 16px;background:#0a6257;color:#fff;font-size:13px;font-weight:800;font-variant-numeric:tabular-nums;border-right:1px solid #ffffff25}
+@media(max-width:700px){.patdi-live-clock{padding:0 9px;font-size:12px}}
