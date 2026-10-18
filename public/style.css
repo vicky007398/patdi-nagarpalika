@@ -100,3 +100,20 @@ nav button{color:#3b514b}nav button:hover,nav button.active{color:#9b6532}
 body{font-family:system-ui,"Noto Sans Gujarati","Shruti",sans-serif}
 @supports(content-visibility:auto){.wide-section,.heritage-story,.feature-split,.map-section{content-visibility:auto;contain-intrinsic-size:auto 700px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Patdi 360° premium Figma visual system — responsive production pass */
+:root{--ink:#153d37;--deep:#073d38;--teal:#0b7768;--lime:#d8bd7b;--muted:#58736b;--cream:#f6f4ec}
+body{background:var(--cream);color:var(--ink);font-family:system-ui,"Noto Sans Gujarati","Shruti",sans-serif}
+.site-header{background:#073d38;box-shadow:0 6px 28px #092d2618;border-bottom:1px solid #d8bd7b30;backdrop-filter:none}
+.brand-copy strong{color:#fff}.brand-copy em{color:#e7ca8b}
+.header-cta,.btn-lime{background:#d8bd7b!important;color:#123e37!important;border-color:#d8bd7b!important}
+.hero{background:#0b5149}.hero-shade{background:linear-gradient(90deg,rgba(4,42,38,.93) 0%,rgba(4,50,45,.75) 48%,rgba(4,50,45,.2) 100%)}
+.hero-kicker,.section-kicker{color:#b99b60}.hero h1{color:#fff}.hero h1 em,.hero h1 span{color:#f0d092}
+.services-grid{gap:20px}.service-tile{background:#fff;border:1px solid #e5e9df;border-radius:20px;box-shadow:0 10px 28px #073d380a;transition:transform .2s ease,box-shadow .2s ease}
+.service-tile:hover{transform:translateY(-3px);box-shadow:0 16px 34px #073d3818;border-color:#bad5c7}
+.service-icon{background:#ddeee7;border-radius:16px}
+.section-heading{color:#153d37}.section-lead{color:#58736b}
+.feature-split,.heritage-story{border-radius:24px;overflow:hidden}
+footer{background:#073d38}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #d8bd7b;outline-offset:3px}
+@media(max-width:768px){.site-header{box-shadow:0 3px 14px #092d2620}.hero-shade{background:linear-gradient(180deg,rgba(4,42,38,.85),rgba(4,50,45,.62))}.service-tile{border-radius:16px}.services-grid{gap:12px}}
