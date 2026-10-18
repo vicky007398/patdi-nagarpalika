@@ -197,3 +197,6 @@ body:has(#home-hero:not([hidden])) .hero-foot{color:#e0ede8}
 /* Persistent Patdi live clock in the weather strip */
 .patdi-live-clock{display:flex;align-items:center;justify-content:center;flex:none;white-space:nowrap;height:100%;padding:0 16px;background:#0a6257;color:#fff;font-size:13px;font-weight:800;font-variant-numeric:tabular-nums;border-right:1px solid #ffffff25}
 @media(max-width:700px){.patdi-live-clock{padding:0 9px;font-size:12px}}
+
+/* Compact mobile weather strip: only HH:MM clock and forecast */
+.patdi-weather .weather-location{display:none!important}.patdi-weather .patdi-live-clock{padding:0 10px;font-size:13px;min-width:0}.patdi-weather .weather-status{padding:0 9px}@media(max-width:700px){.patdi-weather{height:36px}.patdi-weather .patdi-live-clock{padding:0 8px;font-size:12px}.patdi-weather .weather-status{padding:0 7px;font-size:10px}}
