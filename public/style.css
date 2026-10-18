@@ -117,3 +117,16 @@ body{background:var(--cream);color:var(--ink);font-family:system-ui,"Noto Sans G
 footer{background:#073d38}
 button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #d8bd7b;outline-offset:3px}
 @media(max-width:768px){.site-header{box-shadow:0 3px 14px #092d2620}.hero-shade{background:linear-gradient(180deg,rgba(4,42,38,.85),rgba(4,50,45,.62))}.service-tile{border-radius:16px}.services-grid{gap:12px}}
+
+/* Contrast accessibility hotfix: text on green/dark panels */
+.hero,.hero-inner,.feature-split,.feature-content,.voice-feature,.inner-hero,.city-experience,.site-header,footer,.site-footer{color:#fff}
+.hero h1,.hero h2,.hero h3,.hero strong,.hero .section-heading,.feature-split h1,.feature-split h2,.feature-split h3,.feature-split strong,.feature-split .section-heading,.voice-feature h1,.voice-feature h2,.voice-feature h3,.voice-feature strong,.voice-feature .section-heading,.inner-hero h1,.inner-hero h2,.inner-hero h3,.inner-hero strong,.inner-hero .section-heading,.city-experience h1,.city-experience h2,.city-experience h3,.city-experience strong,footer h1,footer h2,footer h3,footer strong{color:#fff!important}
+.hero p,.hero small,.feature-content p,.feature-content small,.voice-feature p,.voice-feature small,.inner-hero p,.inner-hero small,.city-experience p,.city-experience small,footer p,footer small{color:#e0ede8}
+.hero .hero-kicker,.voice-feature .section-kicker,.inner-hero .section-kicker,.feature-content .section-kicker{color:#f0d092!important}
+.site-header nav a,.site-header nav button,.site-header .identity,.site-header .brand-copy strong{color:#fff}
+.site-header nav a:hover,.site-header nav a.active{color:#f0d092}
+.btn-lime,.header-cta{color:#103e39!important}
+.service-tile,.news-item,.service-tile strong,.news-item strong{color:#153d37}
+.service-tile small,.news-item small{color:#4b675f}
+.stats-band,.stats-band strong,.stats-band small{color:#173e37}
+@media(max-width:768px){.hero h1,.feature-content .section-heading,.voice-feature .section-heading,.inner-hero h1{color:#fff!important}}
