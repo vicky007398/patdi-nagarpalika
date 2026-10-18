@@ -88,3 +88,6 @@ nav button{color:#3b514b}nav button:hover,nav button.active{color:#9b6532}
 .site-header nav a.active,.site-header nav a[aria-current=page]{color:#a16a39;background:#f4ebdd}
 .site-header nav a:focus-visible{outline:3px solid #a16a39;outline-offset:2px}
 @media(max-width:900px){.site-header nav#nav{scrollbar-width:thin;overscroll-behavior-x:contain}.site-header nav#nav a{flex:0 0 auto;padding:12px 15px;font-size:13px}.site-header nav#nav a.active{background:#e5eee5;color:#174c43}}
+
+/* Critical route visibility fix: .hero display:grid must never override HTML hidden */
+#home-hero[hidden],.hero[hidden],[hidden]{display:none!important}
