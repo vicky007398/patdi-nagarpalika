@@ -70,3 +70,12 @@ nav button{color:#3b514b}nav button:hover,nav button.active{color:#9b6532}
 .site-header nav button:hover{background:#f1f2e9}
 }
 @media(max-width:420px){.site-header{padding:0 12px}.site-header .header-cta{font-size:11px;padding:9px 10px}.brand-copy strong{font-size:18px}.brand-mark{height:42px;width:42px}.site-header nav button{padding:10px 12px}}
+
+/* Ensure mobile navigation is visible even before JavaScript loads */
+.site-header nav a{display:inline-flex;align-items:center;text-decoration:none;color:#315a50;font-size:13px;font-weight:700;padding:12px 14px;white-space:nowrap}
+.site-header nav a:hover,.site-header nav a:focus-visible{color:#a56d3b}
+@media(max-width:900px){
+.site-header{overflow:visible!important}
+.site-header nav#nav{display:flex!important;visibility:visible!important;opacity:1!important;position:relative!important;grid-column:1/-1;grid-row:2;min-height:49px;max-width:100%;width:100%;flex-direction:row!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;z-index:40}
+.site-header nav#nav a{flex:0 0 auto}
+}
