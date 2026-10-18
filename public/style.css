@@ -191,3 +191,5 @@ body:has(#home-hero:not([hidden])) .hero-foot{color:#e0ede8}
 @keyframes weatherMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(max-width:700px){.patdi-weather{height:40px}.weather-location{padding:0 10px;font-size:12px}.patdi-weather .weather-track{animation:weatherMarquee 27s linear infinite}.patdi-weather .weather-track>span{font-size:12px;padding:0 19px}.weather-status{font-size:10px;padding:0 9px}}
 @media(prefers-reduced-motion:reduce){.patdi-weather .weather-track{animation:none!important}.patdi-weather .ticker-viewport{overflow-x:auto}}
+
+.patdi-weather .weather-group{display:flex;align-items:center;flex:none;width:max-content}.patdi-weather .weather-group>span{display:inline-block;flex:none;white-space:nowrap;padding:0 26px;font-size:14px;font-weight:700}.patdi-weather .weather-track{gap:0}.patdi-weather .ticker-viewport{overscroll-behavior-x:contain}@media(max-width:700px){.patdi-weather .weather-group>span{padding:0 17px;font-size:12px}}
