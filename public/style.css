@@ -145,3 +145,30 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
 .home-shortcut:hover{transform:translateY(-3px);border-color:#0b7768}.home-shortcut>span{font-size:36px}.home-shortcut strong{font-size:22px;color:#153d37}.home-shortcut small{font-size:14px;color:#0b7768}
 .home-closing{background:#0b5149;color:#fff;padding:70px clamp(24px,7vw,140px)}.home-closing h2{font-size:clamp(30px,4vw,55px);line-height:1.2;max-width:850px;color:#fff}.home-closing p{color:#e0ede8;line-height:1.8}.home-closing .btn{margin-top:16px}
 @media(max-width:700px){.home-shortcuts{grid-template-columns:1fr;gap:12px}.home-shortcut{padding:22px}.home-closing{padding-top:50px;padding-bottom:50px}}
+
+/* Approved Figma heritage tourism homepage V2 */
+body:has(#home-hero:not([hidden])){background:#f6f4ec}
+body:has(#home-hero:not([hidden])) .hero{background:#073d38!important;color:#fff!important;min-height:690px;grid-template-columns:53% 47%;height:auto}
+body:has(#home-hero:not([hidden])) .hero-inner{grid-column:1;grid-row:1;padding:95px clamp(28px,5.6vw,100px);max-width:none}
+body:has(#home-hero:not([hidden])) .hero-photo{grid-column:2;grid-row:1;min-height:690px;position:relative;border-radius:24px 0 0 24px;margin:35px 0;background-color:#34796c;background-size:cover;animation:none;transform:none}
+body:has(#home-hero:not([hidden])) .hero-shade{pointer-events:none;background:linear-gradient(90deg,#073d38 0%,#073d38bb 45%,transparent 74%);opacity:.25}
+body:has(#home-hero:not([hidden])) .hero-inner h1{color:#fff!important;font-size:clamp(39px,4.4vw,68px);line-height:1.19;letter-spacing:-.025em}
+body:has(#home-hero:not([hidden])) .hero-inner h1 span{color:#f0d092!important}
+body:has(#home-hero:not([hidden])) .hero-inner p{color:#e0ede8!important;font-size:clamp(17px,1.4vw,21px);max-width:610px;line-height:1.85}
+body:has(#home-hero:not([hidden])) .hero-kicker{color:#d8bd7b!important;font-weight:800}
+body:has(#home-hero:not([hidden])) .hero-orbit,body:has(#home-hero:not([hidden])) .hero-side{display:none}
+body:has(#home-hero:not([hidden])) .hero-actions .btn-lime{background:#d8bd7b!important;color:#073d38!important}
+body:has(#home-hero:not([hidden])) .hero-actions .btn-glass{background:transparent!important;color:#fff!important;border:1px solid #ffffff85}
+body:has(#home-hero:not([hidden])) .hero-foot{color:#e0ede8}
+.heritage-gateway{background:#f6f4ec;padding:clamp(60px,7vw,110px) clamp(22px,5.6vw,100px) 115px}
+.gateway-intro{max-width:930px}.gateway-intro .section-kicker{color:#0b7768;font-weight:800}
+.gateway-intro h2{font-size:clamp(31px,4vw,55px);line-height:1.2;color:#073d38;margin:22px 0}.gateway-intro h2 span{color:#0b7768}
+.gateway-intro p{font-size:18px;line-height:1.8;color:#58736b}
+.gateway-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:43px}
+.gateway-card{display:block;min-width:0;background:#fff;border-radius:22px;overflow:hidden;border:1px solid #e5e9e2;box-shadow:0 9px 25px #073d3810;transition:transform .2s,box-shadow .2s}
+.gateway-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #073d3820}
+.gateway-art{height:155px;margin:18px 18px 0;border-radius:15px;display:grid;place-items:center;background:#dcebe4}
+.gateway-art span{font-size:65px}.gateway-services{background:#d7e7df}.gateway-projects{background:#e7e1d3}.gateway-gallery{background:#dcebe4}
+.gateway-card-body{padding:25px 20px 28px}.gateway-card-body h3{font-size:22px;line-height:1.5;color:#073d38;margin:0 0 8px}.gateway-card-body p{color:#58736b;font-size:15px;margin:0 0 23px}.gateway-card-body>span{color:#0b7768;font-weight:800}
+@media(max-width:900px){.gateway-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){body:has(#home-hero:not([hidden])) .hero{display:flex;flex-direction:column;min-height:0;height:auto}body:has(#home-hero:not([hidden])) .hero-photo{order:0;width:calc(100% - 40px);margin:20px 20px 0;border-radius:18px;min-height:245px;height:245px;flex:none}body:has(#home-hero:not([hidden])) .hero-inner{order:1;padding:43px 22px 55px;width:100%}body:has(#home-hero:not([hidden])) .hero-inner h1{font-size:clamp(32px,8.2vw,42px)}body:has(#home-hero:not([hidden])) .hero-inner p{font-size:16px}body:has(#home-hero:not([hidden])) .hero-shade,body:has(#home-hero:not([hidden])) .hero-photo-label{display:none}body:has(#home-hero:not([hidden])) .hero-actions{display:flex;flex-direction:column;align-items:stretch}body:has(#home-hero:not([hidden])) .hero-actions .btn{width:100%;justify-content:center}.heritage-gateway{padding:58px 20px 75px}.gateway-grid{gap:12px;margin-top:28px}.gateway-art{height:105px;margin:12px 12px 0}.gateway-art span{font-size:42px}.gateway-card-body{padding:15px 13px 20px}.gateway-card-body h3{font-size:17px}.gateway-card-body p{font-size:13px;margin-bottom:15px}.gateway-card-body>span{font-size:13px}}
