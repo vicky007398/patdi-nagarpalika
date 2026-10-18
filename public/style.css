@@ -130,3 +130,11 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
 .service-tile small,.news-item small{color:#4b675f}
 .stats-band,.stats-band strong,.stats-band small{color:#173e37}
 @media(max-width:768px){.hero h1,.feature-content .section-heading,.voice-feature .section-heading,.inner-hero h1{color:#fff!important}}
+
+/* Fast imagery: render immediate color gradients; fetch noncritical imagery only on visibility */
+.hero-photo{background-image:none!important;background-color:#175d52;animation:none;transform:none}
+.hero-photo.image-ready{background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Temple_near_Shakti_Mata_temple_at_the_bank_of_Patdi_Talao_DSCN3867_1.jpg?width=720')!important}
+.photo-story .photo,.feature-image{background-color:#34786c}
+.photo-story .photo[data-bg],.feature-image[data-bg]{background-image:none!important}
+.photo-story .photo.image-ready,.feature-image.image-ready{background-image:var(--lazy-image)!important}
+@media(max-width:640px){.hero-photo{background-position:center;background-size:cover}.hero{min-height:570px}}
