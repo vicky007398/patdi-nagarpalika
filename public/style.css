@@ -91,3 +91,7 @@ nav button{color:#3b514b}nav button:hover,nav button.active{color:#9b6532}
 
 /* Critical route visibility fix: .hero display:grid must never override HTML hidden */
 #home-hero[hidden],.hero[hidden],[hidden]{display:none!important}
+
+/* Patdi 360 compass logo */
+.site-header .brand-logo{display:block;object-fit:contain;width:52px;height:52px;min-width:52px;border:0;border-radius:12px;background:transparent;padding:0;box-shadow:none}
+@media(max-width:420px){.site-header .brand-logo{width:42px;height:42px;min-width:42px}}
