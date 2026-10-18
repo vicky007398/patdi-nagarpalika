@@ -138,3 +138,10 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
 .photo-story .photo[data-bg],.feature-image[data-bg]{background-image:none!important}
 .photo-story .photo.image-ready,.feature-image.image-ready{background-image:var(--lazy-image)!important}
 @media(max-width:640px){.hero-photo{background-position:center;background-size:cover}.hero{min-height:570px}}
+
+/* Home is a gateway, not a duplicate of all navigation pages */
+.home-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:34px}
+.home-shortcut{display:flex;flex-direction:column;gap:13px;padding:28px;border-radius:20px;background:#fff;border:1px solid #e3e9e2;box-shadow:0 8px 25px #073d380b;transition:transform .2s,border-color .2s}
+.home-shortcut:hover{transform:translateY(-3px);border-color:#0b7768}.home-shortcut>span{font-size:36px}.home-shortcut strong{font-size:22px;color:#153d37}.home-shortcut small{font-size:14px;color:#0b7768}
+.home-closing{background:#0b5149;color:#fff;padding:70px clamp(24px,7vw,140px)}.home-closing h2{font-size:clamp(30px,4vw,55px);line-height:1.2;max-width:850px;color:#fff}.home-closing p{color:#e0ede8;line-height:1.8}.home-closing .btn{margin-top:16px}
+@media(max-width:700px){.home-shortcuts{grid-template-columns:1fr;gap:12px}.home-shortcut{padding:22px}.home-closing{padding-top:50px;padding-bottom:50px}}
