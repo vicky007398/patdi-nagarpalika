@@ -215,3 +215,21 @@ body,body:has(#home-hero:not([hidden])){background:#f5f8f6;color:#173b35}
 .inner-hero,.site-header,footer{background-color:#073d38;color:#fff}
 .patdi-weather{background:#0b5149;color:#fff}
 @media(max-width:700px){.heritage-gateway{padding:52px 20px 68px}.gateway-card{border-radius:16px}.gateway-card-body{padding:16px 13px 20px}}
+
+/* Five-second staggered homepage entrance. Elements stay usable throughout. */
+@keyframes patdiEnterDown{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes patdiEnterUp{0%{opacity:0;transform:translateY(28px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes patdiEnterSoft{0%{opacity:0}100%{opacity:1}}
+@media(prefers-reduced-motion:no-preference){
+.page-entrance .site-header{animation:patdiEnterDown .7s ease-out .08s both}
+.page-entrance .patdi-weather{animation:patdiEnterDown .65s ease-out .55s both}
+.page-entrance .hero-photo,.page-entrance .hero-shade{animation:patdiEnterSoft 1.4s ease-out .75s both}
+.page-entrance .hero-kicker{animation:patdiEnterUp .75s ease-out 1.1s both}
+.page-entrance .hero-inner h1{animation:patdiEnterUp .9s cubic-bezier(.2,.7,.2,1) 1.55s both}
+.page-entrance .hero-inner>p{animation:patdiEnterUp .8s ease-out 2.2s both}
+.page-entrance .hero-actions{animation:patdiEnterUp .8s ease-out 2.85s both}
+.page-entrance .hero-foot{animation:patdiEnterUp .75s ease-out 3.5s both}
+.page-entrance .hero-side,.page-entrance .hero-photo-label{animation:patdiEnterSoft .8s ease-out 3.8s both}
+.page-entrance #view{animation:patdiEnterSoft .95s ease-out 4s both}
+}
+@media(max-width:700px) and (prefers-reduced-motion:no-preference){.page-entrance .hero-inner h1{animation-delay:1.2s}.page-entrance .hero-inner>p{animation-delay:1.75s}.page-entrance .hero-actions{animation-delay:2.3s}.page-entrance .hero-foot{animation-delay:2.9s}.page-entrance #view{animation-delay:3.25s}}
