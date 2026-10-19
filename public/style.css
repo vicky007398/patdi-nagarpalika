@@ -257,3 +257,19 @@ body.patdi-intro #view> :nth-child(3){animation:patdiEnterUp .9s ease-out 3.85s 
 .site-header nav#nav a,.site-header nav#nav a:link,.site-header nav#nav a:visited{color:#f7fbf9!important;opacity:1!important}
 .site-header nav#nav a:hover,.site-header nav#nav a:focus-visible{color:#fff!important;background:rgba(255,255,255,.15)!important}
 .site-header nav#nav a.active,.site-header nav#nav a[aria-current="page"],.site-header nav#nav a.active:hover{color:#082f2a!important;background:#d6fa78!important;font-weight:800!important;opacity:1!important}
+
+/* High-contrast navigation on every route, including mobile */
+.site-header nav#nav{background:#073d38!important;opacity:1!important}
+.site-header nav#nav a,.site-header nav#nav a:link,.site-header nav#nav a:visited{color:#ffffff!important;background:transparent!important;opacity:1!important;text-shadow:none!important;-webkit-text-fill-color:#fff!important}
+.site-header nav#nav a:hover,.site-header nav#nav a:focus-visible{color:#ffffff!important;background:#24665b!important;-webkit-text-fill-color:#fff!important}
+.site-header nav#nav a.active,.site-header nav#nav a[aria-current="page"],.site-header nav#nav a.active:hover,.site-header nav#nav a[aria-current="page"]:focus-visible{color:#10382f!important;background:#d6fa78!important;-webkit-text-fill-color:#10382f!important;font-weight:800!important;opacity:1!important}
+.site-header nav#nav a:focus-visible{outline:2px solid #fff!important;outline-offset:-2px}
+@keyframes patdiPageRise{from{opacity:0;transform:translate3d(0,20px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@media(prefers-reduced-motion:no-preference){
+body.patdi-route-enter #view> :nth-child(1){animation:patdiPageRise .8s ease-out .12s both}
+body.patdi-route-enter #view> :nth-child(2){animation:patdiPageRise .85s ease-out .85s both}
+body.patdi-route-enter #view> :nth-child(3){animation:patdiPageRise .85s ease-out 1.6s both}
+body.patdi-route-enter #view> :nth-child(4){animation:patdiPageRise .85s ease-out 2.35s both}
+body.patdi-route-enter #view> :nth-child(5){animation:patdiPageRise .85s ease-out 3.1s both}
+body.patdi-route-enter #view> :nth-child(n+6){animation:patdiPageRise .85s ease-out 3.85s both}
+}
