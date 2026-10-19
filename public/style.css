@@ -252,3 +252,8 @@ body.patdi-intro #view> :nth-child(1){animation:patdiEnterUp .9s ease-out 3.05s 
 body.patdi-intro #view> :nth-child(2){animation:patdiEnterUp .9s ease-out 3.45s both}
 body.patdi-intro #view> :nth-child(3){animation:patdiEnterUp .9s ease-out 3.85s both}
 @media(prefers-reduced-motion:reduce){body.patdi-intro .site-header *,body.patdi-intro .patdi-weather,body.patdi-intro #home-hero *,body.patdi-intro #view>*{animation:none!important;opacity:1!important;transform:none!important}}
+
+/* Navigation contrast correction: active/selected items stay clearly readable */
+.site-header nav#nav a,.site-header nav#nav a:link,.site-header nav#nav a:visited{color:#f7fbf9!important;opacity:1!important}
+.site-header nav#nav a:hover,.site-header nav#nav a:focus-visible{color:#fff!important;background:rgba(255,255,255,.15)!important}
+.site-header nav#nav a.active,.site-header nav#nav a[aria-current="page"],.site-header nav#nav a.active:hover{color:#082f2a!important;background:#d6fa78!important;font-weight:800!important;opacity:1!important}
