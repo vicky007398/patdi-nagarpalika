@@ -276,3 +276,16 @@ body.patdi-route-enter #view> :nth-child(n+6){animation:patdiPageRise .85s ease-
 
 /* Fast homepage hero: serve optimized image from same Cloudflare domain */
 .hero-photo,.hero-photo.image-ready{background-image:url('/images/patdi-talao.webp')!important;background-color:#175d52;background-size:cover;background-position:center;}
+
+/* Mobile homepage: show the entire heritage photo instead of cropping it */
+@media(max-width:700px){
+ body:has(#home-hero:not([hidden])) #home-hero .hero-photo{
+  box-sizing:border-box;width:calc(100% - 32px);height:auto!important;min-height:0!important;aspect-ratio:4/3;
+  margin:16px 16px 0;border-radius:16px;flex:0 0 auto;
+  background-image:url('/images/patdi-talao.webp')!important;
+  background-size:contain!important;background-position:center center!important;
+  background-repeat:no-repeat!important;background-color:#e9e8df!important;
+ }
+ body:has(#home-hero:not([hidden])) #home-hero .hero-inner{padding:28px 20px 38px!important}
+ body:has(#home-hero:not([hidden])) #home-hero .hero-inner h1{font-size:clamp(29px,7.5vw,39px);line-height:1.25}
+}
