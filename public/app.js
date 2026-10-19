@@ -31,5 +31,5 @@ document.addEventListener('click',e=>{const service=e.target.closest('[data-serv
   },{rootMargin:'220px 0px'}):null;
   function observe(){document.querySelectorAll('[data-bg]:not([data-bg-observed])').forEach(el=>{el.dataset.bgObserved='1';if(io)io.observe(el);else{el.style.setProperty('--lazy-image','url("'+el.dataset.bg+'")');el.classList.add('image-ready')}})}
   const mo=new MutationObserver(observe);mo.observe(document.querySelector('#view')||document.body,{childList:true,subtree:true});observe();
-  const hero=document.querySelector('.hero-photo');if(hero){const load=()=>{const img=new Image();img.decoding='async';img.onload=()=>hero.classList.add('image-ready');img.src='https://commons.wikimedia.org/wiki/Special:FilePath/Temple_near_Shakti_Mata_temple_at_the_bank_of_Patdi_Talao_DSCN3867_1.jpg?width=720'};if('requestIdleCallback' in window)requestIdleCallback(load,{timeout:1300});else setTimeout(load,350)}
+  /* Homepage image is now loaded directly by CSS from /images/patdi-talao.webp. */
 })();
