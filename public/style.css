@@ -273,3 +273,6 @@ body.patdi-route-enter #view> :nth-child(4){animation:patdiPageRise .85s ease-ou
 body.patdi-route-enter #view> :nth-child(5){animation:patdiPageRise .85s ease-out 3.1s both}
 body.patdi-route-enter #view> :nth-child(n+6){animation:patdiPageRise .85s ease-out 3.85s both}
 }
+
+/* Fast homepage hero: serve optimized image from same Cloudflare domain */
+.hero-photo,.hero-photo.image-ready{background-image:url('/images/patdi-talao.webp')!important;background-color:#175d52;background-size:cover;background-position:center;}
